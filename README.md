@@ -92,3 +92,15 @@ Contributions are welcome! Please fork the repository and submit a Pull Request.
 ## License
 
 [License Name/Type] - See `LICENSE` file for details.
+
+## Emulator Licenses
+
+This project uses the following Libretro cores for emulation. Each core is subject to its own license:
+
+- **NES**: FCEUmm (GPL v2)
+- **SNES**: Snes9x (Non-commercial)
+- **GBA**: mGBA (MPL 2.0)
+- **DS**: melonDS (GPL v3)
+- **PSX**: PCSX ReARMed (GPL v2)
+- **Genesis/Mega Drive**: PicoDrive (MAME / GPL v2)
+
