@@ -1,0 +1,94 @@
+# SUMEE (Lite)
+
+**SUMEE** is a highly stylized, nostalgic iOS launcher and frontend inspired by the **PS Vita** interface and the **Frutiger Aero** design language.
+
+It transforms your iOS navigation experience with 3D bubble icons, "LiveArea" style app pages, floating cartridges, and a fully functional system interface including Music, Photos, and Game integrations.
+
+![Banner](sumee/Assets.xcassets/AppIcon.appiconset/1024.png) *Note: Replace with actual screenshot path if available*
+
+## Features
+
+- **Vita-Style Home Screen**:
+    - Vertical scrolling pages with 3D, physics-based bubble icons.
+    - "Wobble" edit mode and drag-and-drop organization.
+- **LiveArea Interface**:
+    - Launch apps into a "LiveArea" gate before entering.
+    - **Peel-to-Close**: Use the signature "peel" gesture (top-right corner) to close apps and games. Includes haptic feedback!
+- **System Apps**:
+    - **Music Player**: Floating mini-player and full-screen visualization.
+    - **Photos**: Integrated gallery viewer.
+    - **Settings**: Comprehensive customization (Lite Mode, Performance Mode, Custom Themes).
+- **Emulation Frontend**:
+    - Built-in support for launching and managing ROMs (requires appropriate backend/core setup).
+- **Aesthetics**:
+    - Frutiger Aero gloss and depth.
+    - Dynamic backgrounds and floating particle effects.
+    - Custom "Lite Mode" for older devices to ensure smooth 60fps performance.
+
+## Prerequisites
+
+- **macOS** with the latest version of **Xcode** (15.0+ recommended).
+- **iOS Device** matching the deployment target (iOS 15.0+).
+- **Apple ID** (for signing).
+
+## Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/getzemani63/sumee-lite.git
+cd sumee-lite
+```
+
+### 2. Open in Xcode
+
+Double-click on **`SUMEE!.xcodeproj`** to open the project.
+
+### 3. Configure Signing
+
+1.  Click on the **SUMEE** project icon in the top-left project navigator.
+2.  Select the **SUMEE** target under "Targets".
+3.  Go to the **Signing & Capabilities** tab.
+4.  Select your **Team** from the dropdown menu.
+5.  Ensure the **Bundle Identifier** is unique (e.g., change `com.sumee.app` to `com.yourname.sumee`) if you don't have access to the original team profile.
+
+### 4. Run the App
+
+1.  Connect your iOS device via USB.
+2.  Select your device from the generic device list in the top toolbar.
+3.  Press **Cmd + R** or click the **Play** button to build and run.
+
+> **Note:** If running on a physical device for the first time, you may need to trust your developer profile in **Settings > General > VPN & Device Management** on your iPhone/iPad.
+
+---
+
+## Building an IPA (For Sideloading)
+
+To verify the app or share it (e.g., via AltStore, SideStore, or TrollStore), you need to export an `.ipa` file.
+
+1.  **Select "Any iOS Device (arm64)"**:
+    - In the device selector (top toolbar), choose **Any iOS Device (arm64)** instead of a specific connected phone.
+
+2.  **Archive**:
+    - Go to **Product > Archive** in the menu bar.
+    - Xcode will build the project. This may take a few minutes.
+
+3.  **Distribute App**:
+    - Once the Organizer window appears with your archive selected, click **Distribute App**.
+    - Select **Custom** (or *Ad Hoc* / *Development* depending on your Xcode version options).
+    - Choose **App Thinning**: *None* (to make it compatible with all devices) or select your specific model.
+    - **Signing**: Select *Automatically manage signing* or manually select your profile.
+
+4.  **Export**:
+    - Choose a destination folder on your Mac.
+    - Xcode will generate a folder containing `SUMEE.ipa`.
+
+You can now sideload this `SUMEE.ipa` using tools like **AltServer** or **SideStore**.
+
+## Contributing
+
+Contributions are welcome! Please fork the repository and submit a Pull Request.
+
+## License
+
+[License Name/Type] - See `LICENSE` file for details.

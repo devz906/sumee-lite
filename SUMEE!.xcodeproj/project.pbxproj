@@ -1,0 +1,1352 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E102C7ED2EE8ED0D00DDA23A /* GBAAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = E102C7E62EE8ED0D00DDA23A /* GBAAudio.swift */; };
+		E102C7EE2EE8ED0D00DDA23A /* GBAVirtualController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E102C7EB2EE8ED0D00DDA23A /* GBAVirtualController.swift */; };
+		E102C7EF2EE8ED0D00DDA23A /* GBAShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = E102C7EA2EE8ED0D00DDA23A /* GBAShaders.metal */; };
+		E102C7F02EE8ED0D00DDA23A /* GBACore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E102C7E72EE8ED0D00DDA23A /* GBACore.swift */; };
+		E102C7F12EE8ED0D00DDA23A /* GBAInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E102C7E82EE8ED0D00DDA23A /* GBAInput.swift */; };
+		E102C7F22EE8ED0D00DDA23A /* GBARenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E102C7E92EE8ED0D00DDA23A /* GBARenderView.swift */; };
+		E126EB6E2EF7F19700BE9C90 /* ShareToSumee.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = E126EB642EF7F19700BE9C90 /* ShareToSumee.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E12C128D2EE9321D00E3B7EE /* mgba.framework in Embed Libraries */ = {isa = PBXBuildFile; fileRef = E12C128C2EE9321D00E3B7EE /* mgba.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E146ECCE2EFA37CC0082F891 /* SNESVirtualController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E146ECCD2EFA37CC0082F891 /* SNESVirtualController.swift */; };
+		E146ECD02EFA37E20082F891 /* PSXVirtualController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E146ECCF2EFA37E20082F891 /* PSXVirtualController.swift */; };
+		E146ECD22EFA37EC0082F891 /* DSVirtualController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E146ECD12EFA37EC0082F891 /* DSVirtualController.swift */; };
+		E146ECD42EFA37FB0082F891 /* GBAVirtualController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E146ECD32EFA37FB0082F891 /* GBAVirtualController.swift */; };
+		E1D29F222EEBF1EC0021E012 /* PSXVirtualController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D29F1F2EEBF1EB0021E012 /* PSXVirtualController.swift */; };
+		E1D29F232EEBF1EC0021E012 /* PSXShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = E1D29F1E2EEBF1EB0021E012 /* PSXShaders.metal */; };
+		E1D29F242EEBF1EC0021E012 /* PSXCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D29F1B2EEBF1EB0021E012 /* PSXCore.swift */; };
+		E1D29F252EEBF1EC0021E012 /* PSXAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D29F1A2EEBF1EB0021E012 /* PSXAudio.swift */; };
+		E1D29F262EEBF1EC0021E012 /* PSXInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D29F1C2EEBF1EB0021E012 /* PSXInput.swift */; };
+		E1D29F272EEBF1EC0021E012 /* PSXRenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D29F1D2EEBF1EB0021E012 /* PSXRenderView.swift */; };
+		E1D29F2B2EEBFD2E0021E012 /* PSXScreenLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D29F2A2EEBFD2E0021E012 /* PSXScreenLayout.swift */; };
+		E1D2A2762EEC3E330021E012 /* pcsx_rearmed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1D2A2742EEC3E290021E012 /* pcsx_rearmed.framework */; };
+		E1D2A2772EEC3E330021E012 /* pcsx_rearmed.framework in Embed Libraries */ = {isa = PBXBuildFile; fileRef = E1D2A2742EEC3E290021E012 /* pcsx_rearmed.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E1D2AC822EED93DC0021E012 /* SNESRenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D2AC7F2EED93DC0021E012 /* SNESRenderView.swift */; };
+		E1D2AC832EED93DC0021E012 /* SNESInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D2AC7E2EED93DC0021E012 /* SNESInput.swift */; };
+		E1D2AC842EED93DC0021E012 /* SNESCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D2AC7D2EED93DC0021E012 /* SNESCore.swift */; };
+		E1D2AC852EED93DC0021E012 /* SNESAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D2AC7C2EED93DC0021E012 /* SNESAudio.swift */; };
+		E1D2AC862EED93DC0021E012 /* SNESShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = E1D2AC802EED93DC0021E012 /* SNESShaders.metal */; };
+		E1D2AD572EED9F3C0021E012 /* SNESVirtualController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D2AD562EED9F3C0021E012 /* SNESVirtualController.swift */; };
+		E1D2AD592EEDA15B0021E012 /* SNESScreenLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D2AD582EEDA15B0021E012 /* SNESScreenLayout.swift */; };
+		E1D2AD5C2EEDAB5A0021E012 /* Snes9x.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1D2AD5A2EEDAB2F0021E012 /* Snes9x.framework */; };
+		E1D2AD5D2EEDAB5A0021E012 /* Snes9x.framework in Embed Libraries */ = {isa = PBXBuildFile; fileRef = E1D2AD5A2EEDAB2F0021E012 /* Snes9x.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E1E34A622EF9304300EAA7E0 /* GBAScreenLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E34A612EF9304300EAA7E0 /* GBAScreenLayout.swift */; };
+		E1E34ACB2EF957AD00EAA7E0 /* DSControlManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E34ACA2EF957AD00EAA7E0 /* DSControlManager.swift */; };
+		E1E34D752EF962F000EAA7E0 /* PSXControlManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E34D742EF962F000EAA7E0 /* PSXControlManager.swift */; };
+		E1E34D772EF962FB00EAA7E0 /* GBAControlManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E34D762EF962FB00EAA7E0 /* GBAControlManager.swift */; };
+		E1E34D792EF9653100EAA7E0 /* SNESControlManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E34D782EF9653100EAA7E0 /* SNESControlManager.swift */; };
+		E1E790772F35A7D500B5D352 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1E790762F35A7D500B5D352 /* WidgetKit.framework */; };
+		E1E790792F35A7D500B5D352 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1E790782F35A7D500B5D352 /* SwiftUI.framework */; };
+		E1E7908A2F35AE6600B5D352 /* SumeeWidgetsExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = E1E790752F35A7D500B5D352 /* SumeeWidgetsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E1E9299F2EE99502001E2138 /* DSRenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E9299C2EE99502001E2138 /* DSRenderView.swift */; };
+		E1E929A02EE99502001E2138 /* DSCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E9299A2EE99502001E2138 /* DSCore.swift */; };
+		E1E929A12EE99502001E2138 /* DSAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E929992EE99502001E2138 /* DSAudio.swift */; };
+		E1E929A22EE99502001E2138 /* DSInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E9299B2EE99502001E2138 /* DSInput.swift */; };
+		E1E929A32EE99502001E2138 /* DSShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = E1E9299D2EE99502001E2138 /* DSShaders.metal */; };
+		E1E929AA2EE9B209001E2138 /* DSBiosManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E929A82EE9B209001E2138 /* DSBiosManager.swift */; };
+		E1E929AC2EE9B209001E2138 /* DSBiosImporterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E929A72EE9B209001E2138 /* DSBiosImporterView.swift */; };
+		E1E92A692EEA2E17001E2138 /* DSVirtualController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E92A682EEA2E17001E2138 /* DSVirtualController.swift */; };
+		E1E92A6B2EEA3035001E2138 /* DSScreensLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E92A6A2EEA3035001E2138 /* DSScreensLayout.swift */; };
+		E1E92A6E2EEA4248001E2138 /* melonds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1E92A6D2EEA4248001E2138 /* melonds.framework */; };
+		E1E92A6F2EEA4248001E2138 /* melonds.framework in Embed Libraries */ = {isa = PBXBuildFile; fileRef = E1E92A6D2EEA4248001E2138 /* melonds.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E1E92A712EEA9489001E2138 /* melonds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1E92A702EEA9489001E2138 /* melonds.framework */; };
+		E1E92A732EEA94A1001E2138 /* DSFirmwarePatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E92A722EEA94A1001E2138 /* DSFirmwarePatcher.swift */; };
+		E1E92A752EEAA1E8001E2138 /* DSFirmwareConfigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E92A742EEAA1E8001E2138 /* DSFirmwareConfigView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E126EB6C2EF7F19700BE9C90 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1B055982ED6E76A00B2E5DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E126EB632EF7F19700BE9C90;
+			remoteInfo = ShareToSumee;
+		};
+		E1B055AE2ED6E76D00B2E5DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1B055982ED6E76A00B2E5DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1B0559F2ED6E76A00B2E5DC;
+			remoteInfo = sumee;
+		};
+		E1B055B82ED6E76D00B2E5DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1B055982ED6E76A00B2E5DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1B0559F2ED6E76A00B2E5DC;
+			remoteInfo = sumee;
+		};
+		E1E7908B2F35AE6600B5D352 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1B055982ED6E76A00B2E5DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1E790742F35A7D500B5D352;
+			remoteInfo = SumeeWidgetsExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E102C7F62EE8F77200DDA23A /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E12C128D2EE9321D00E3B7EE /* mgba.framework in Embed Libraries */,
+				E1D2A2772EEC3E330021E012 /* pcsx_rearmed.framework in Embed Libraries */,
+				E1D2AD5D2EEDAB5A0021E012 /* Snes9x.framework in Embed Libraries */,
+				E1E92A6F2EEA4248001E2138 /* melonds.framework in Embed Libraries */,
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E126EB732EF7F19700BE9C90 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E1E7908A2F35AE6600B5D352 /* SumeeWidgetsExtension.appex in Embed Foundation Extensions */,
+				E126EB6E2EF7F19700BE9C90 /* ShareToSumee.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E102C7E52EE8ED0D00DDA23A /* GBA-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GBA-Bridging-Header.h"; sourceTree = "<group>"; };
+		E102C7E62EE8ED0D00DDA23A /* GBAAudio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBAAudio.swift; sourceTree = "<group>"; };
+		E102C7E72EE8ED0D00DDA23A /* GBACore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBACore.swift; sourceTree = "<group>"; };
+		E102C7E82EE8ED0D00DDA23A /* GBAInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBAInput.swift; sourceTree = "<group>"; };
+		E102C7E92EE8ED0D00DDA23A /* GBARenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBARenderView.swift; sourceTree = "<group>"; };
+		E102C7EA2EE8ED0D00DDA23A /* GBAShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = GBAShaders.metal; sourceTree = "<group>"; };
+		E102C7EB2EE8ED0D00DDA23A /* GBAVirtualController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBAVirtualController.swift; sourceTree = "<group>"; };
+		E126EB642EF7F19700BE9C90 /* ShareToSumee.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ShareToSumee.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E12C128C2EE9321D00E3B7EE /* mgba.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = mgba.framework; sourceTree = "<group>"; };
+		E146ECCD2EFA37CC0082F891 /* SNESVirtualController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNESVirtualController.swift; sourceTree = "<group>"; };
+		E146ECCF2EFA37E20082F891 /* PSXVirtualController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSXVirtualController.swift; sourceTree = "<group>"; };
+		E146ECD12EFA37EC0082F891 /* DSVirtualController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSVirtualController.swift; sourceTree = "<group>"; };
+		E146ECD32EFA37FB0082F891 /* GBAVirtualController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBAVirtualController.swift; sourceTree = "<group>"; };
+		E1B055A02ED6E76A00B2E5DC /* SUMEE!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SUMEE!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1B055AD2ED6E76D00B2E5DC /* sumeeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sumeeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1B055B72ED6E76D00B2E5DC /* sumeeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sumeeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1D29F1A2EEBF1EB0021E012 /* PSXAudio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSXAudio.swift; sourceTree = "<group>"; };
+		E1D29F1B2EEBF1EB0021E012 /* PSXCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSXCore.swift; sourceTree = "<group>"; };
+		E1D29F1C2EEBF1EB0021E012 /* PSXInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSXInput.swift; sourceTree = "<group>"; };
+		E1D29F1D2EEBF1EB0021E012 /* PSXRenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSXRenderView.swift; sourceTree = "<group>"; };
+		E1D29F1E2EEBF1EB0021E012 /* PSXShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = PSXShaders.metal; sourceTree = "<group>"; };
+		E1D29F1F2EEBF1EB0021E012 /* PSXVirtualController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSXVirtualController.swift; sourceTree = "<group>"; };
+		E1D29F2A2EEBFD2E0021E012 /* PSXScreenLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSXScreenLayout.swift; sourceTree = "<group>"; };
+		E1D2A2742EEC3E290021E012 /* pcsx_rearmed.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = pcsx_rearmed.framework; sourceTree = "<group>"; };
+		E1D2AC7C2EED93DC0021E012 /* SNESAudio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNESAudio.swift; sourceTree = "<group>"; };
+		E1D2AC7D2EED93DC0021E012 /* SNESCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNESCore.swift; sourceTree = "<group>"; };
+		E1D2AC7E2EED93DC0021E012 /* SNESInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNESInput.swift; sourceTree = "<group>"; };
+		E1D2AC7F2EED93DC0021E012 /* SNESRenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNESRenderView.swift; sourceTree = "<group>"; };
+		E1D2AC802EED93DC0021E012 /* SNESShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = SNESShaders.metal; sourceTree = "<group>"; };
+		E1D2AD562EED9F3C0021E012 /* SNESVirtualController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNESVirtualController.swift; sourceTree = "<group>"; };
+		E1D2AD582EEDA15B0021E012 /* SNESScreenLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNESScreenLayout.swift; sourceTree = "<group>"; };
+		E1D2AD5A2EEDAB2F0021E012 /* Snes9x.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Snes9x.framework; sourceTree = "<group>"; };
+		E1E34A612EF9304300EAA7E0 /* GBAScreenLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBAScreenLayout.swift; sourceTree = "<group>"; };
+		E1E34ACA2EF957AD00EAA7E0 /* DSControlManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSControlManager.swift; sourceTree = "<group>"; };
+		E1E34D742EF962F000EAA7E0 /* PSXControlManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSXControlManager.swift; sourceTree = "<group>"; };
+		E1E34D762EF962FB00EAA7E0 /* GBAControlManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBAControlManager.swift; sourceTree = "<group>"; };
+		E1E34D782EF9653100EAA7E0 /* SNESControlManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNESControlManager.swift; sourceTree = "<group>"; };
+		E1E790752F35A7D500B5D352 /* SumeeWidgetsExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SumeeWidgetsExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1E790762F35A7D500B5D352 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		E1E790782F35A7D500B5D352 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		E1E929982EE99502001E2138 /* DS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DS-Bridging-Header.h"; sourceTree = "<group>"; };
+		E1E929992EE99502001E2138 /* DSAudio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSAudio.swift; sourceTree = "<group>"; };
+		E1E9299A2EE99502001E2138 /* DSCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSCore.swift; sourceTree = "<group>"; };
+		E1E9299B2EE99502001E2138 /* DSInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSInput.swift; sourceTree = "<group>"; };
+		E1E9299C2EE99502001E2138 /* DSRenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSRenderView.swift; sourceTree = "<group>"; };
+		E1E9299D2EE99502001E2138 /* DSShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = DSShaders.metal; sourceTree = "<group>"; };
+		E1E929A72EE9B209001E2138 /* DSBiosImporterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSBiosImporterView.swift; sourceTree = "<group>"; };
+		E1E929A82EE9B209001E2138 /* DSBiosManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSBiosManager.swift; sourceTree = "<group>"; };
+		E1E92A682EEA2E17001E2138 /* DSVirtualController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSVirtualController.swift; sourceTree = "<group>"; };
+		E1E92A6A2EEA3035001E2138 /* DSScreensLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSScreensLayout.swift; sourceTree = "<group>"; };
+		E1E92A6D2EEA4248001E2138 /* melonds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = melonds.framework; path = DSKit/melonds.framework; sourceTree = "<group>"; };
+		E1E92A702EEA9489001E2138 /* melonds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = melonds.framework; sourceTree = "<group>"; };
+		E1E92A722EEA94A1001E2138 /* DSFirmwarePatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSFirmwarePatcher.swift; sourceTree = "<group>"; };
+		E1E92A742EEAA1E8001E2138 /* DSFirmwareConfigView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSFirmwareConfigView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		E126EB722EF7F19700BE9C90 /* Exceptions for "ShareToSumee" folder in "ShareToSumee" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = E126EB632EF7F19700BE9C90 /* ShareToSumee */;
+		};
+		E1D2A2792EEC424C0021E012 /* Exceptions for "sumee" folder in "SUMEE!" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"AirKit-main",
+				Info.plist,
+			);
+			target = E1B0559F2ED6E76A00B2E5DC /* SUMEE! */;
+		};
+		E1E790842F35A7D700B5D352 /* Exceptions for "SumeeWidgets" folder in "SumeeWidgetsExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = E1E790742F35A7D500B5D352 /* SumeeWidgetsExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		E10CA51C2EFB7894005E6E9F /* Exceptions for "NESKit" folder in "Embed Libraries" phase from "SUMEE!" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			attributesByRelativePath = {
+				FCEUmm.framework = (CodeSignOnCopy, RemoveHeadersOnCopy, );
+			};
+			buildPhase = E102C7F62EE8F77200DDA23A /* Embed Libraries */;
+			membershipExceptions = (
+				FCEUmm.framework,
+			);
+		};
+		E12410172EFC3ED800954687 /* Exceptions for "PicoDriveKit" folder in "Embed Libraries" phase from "SUMEE!" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			attributesByRelativePath = {
+				PicoDrive.framework = (CodeSignOnCopy, RemoveHeadersOnCopy, );
+			};
+			buildPhase = E102C7F62EE8F77200DDA23A /* Embed Libraries */;
+			membershipExceptions = (
+				PicoDrive.framework,
+			);
+		};
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		E10CA5092EFB75F1005E6E9F /* NESKit */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				E10CA51C2EFB7894005E6E9F /* Exceptions for "NESKit" folder in "Embed Libraries" phase from "SUMEE!" target */,
+			);
+			path = NESKit;
+			sourceTree = "<group>";
+		};
+		E10CADB02EFBE217005E6E9F /* PicoDriveKit */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				E12410172EFC3ED800954687 /* Exceptions for "PicoDriveKit" folder in "Embed Libraries" phase from "SUMEE!" target */,
+			);
+			path = PicoDriveKit;
+			sourceTree = "<group>";
+		};
+		E126EB652EF7F19700BE9C90 /* ShareToSumee */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				E126EB722EF7F19700BE9C90 /* Exceptions for "ShareToSumee" folder in "ShareToSumee" target */,
+			);
+			path = ShareToSumee;
+			sourceTree = "<group>";
+		};
+		E152E22E2F02798800D2050D /* skins */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = skins;
+			sourceTree = "<group>";
+		};
+		E152E5B62F02995300D2050D /* Skins */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Skins;
+			sourceTree = "<group>";
+		};
+		E152E5F42F03DFBE00D2050D /* Skins */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Skins;
+			sourceTree = "<group>";
+		};
+		E152E60A2F046F9E00D2050D /* Skins */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Skins;
+			sourceTree = "<group>";
+		};
+		E1B055A22ED6E76A00B2E5DC /* sumee */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				E1D2A2792EEC424C0021E012 /* Exceptions for "sumee" folder in "SUMEE!" target */,
+			);
+			path = sumee;
+			sourceTree = "<group>";
+		};
+		E1B055B02ED6E76D00B2E5DC /* sumeeTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = sumeeTests;
+			sourceTree = "<group>";
+		};
+		E1B055BA2ED6E76D00B2E5DC /* sumeeUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = sumeeUITests;
+			sourceTree = "<group>";
+		};
+		E1E7907A2F35A7D500B5D352 /* SumeeWidgets */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				E1E790842F35A7D700B5D352 /* Exceptions for "SumeeWidgets" folder in "SumeeWidgetsExtension" target */,
+			);
+			path = SumeeWidgets;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E126EB612EF7F19700BE9C90 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1B0559D2ED6E76A00B2E5DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1E92A6E2EEA4248001E2138 /* melonds.framework in Frameworks */,
+				E1D2A2762EEC3E330021E012 /* pcsx_rearmed.framework in Frameworks */,
+				E1D2AD5C2EEDAB5A0021E012 /* Snes9x.framework in Frameworks */,
+				E1E92A712EEA9489001E2138 /* melonds.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1B055AA2ED6E76D00B2E5DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1B055B42ED6E76D00B2E5DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1E790722F35A7D500B5D352 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1E790792F35A7D500B5D352 /* SwiftUI.framework in Frameworks */,
+				E1E790772F35A7D500B5D352 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E102C7EC2EE8ED0D00DDA23A /* GBAKit */ = {
+			isa = PBXGroup;
+			children = (
+				E152E5B62F02995300D2050D /* Skins */,
+				E1E34D762EF962FB00EAA7E0 /* GBAControlManager.swift */,
+				E1E34A612EF9304300EAA7E0 /* GBAScreenLayout.swift */,
+				E12C128C2EE9321D00E3B7EE /* mgba.framework */,
+				E102C7E52EE8ED0D00DDA23A /* GBA-Bridging-Header.h */,
+				E102C7E62EE8ED0D00DDA23A /* GBAAudio.swift */,
+				E102C7E72EE8ED0D00DDA23A /* GBACore.swift */,
+				E102C7E82EE8ED0D00DDA23A /* GBAInput.swift */,
+				E102C7E92EE8ED0D00DDA23A /* GBARenderView.swift */,
+				E146ECD32EFA37FB0082F891 /* GBAVirtualController.swift */,
+				E102C7EA2EE8ED0D00DDA23A /* GBAShaders.metal */,
+				E102C7EB2EE8ED0D00DDA23A /* GBAVirtualController.swift */,
+			);
+			path = GBAKit;
+			sourceTree = "<group>";
+		};
+		E1B055972ED6E76A00B2E5DC = {
+			isa = PBXGroup;
+			children = (
+				E10CADB02EFBE217005E6E9F /* PicoDriveKit */,
+				E10CA5092EFB75F1005E6E9F /* NESKit */,
+				E1D2AC812EED93DC0021E012 /* SNESKit */,
+				E1D29F202EEBF1EB0021E012 /* PSXKit */,
+				E1E9299E2EE99502001E2138 /* DSKit */,
+				E102C7EC2EE8ED0D00DDA23A /* GBAKit */,
+				E1B055A22ED6E76A00B2E5DC /* sumee */,
+				E1B055B02ED6E76D00B2E5DC /* sumeeTests */,
+				E1B055BA2ED6E76D00B2E5DC /* sumeeUITests */,
+				E126EB652EF7F19700BE9C90 /* ShareToSumee */,
+				E1E7907A2F35A7D500B5D352 /* SumeeWidgets */,
+				E1B055A12ED6E76A00B2E5DC /* Products */,
+				E1E92A6C2EEA4247001E2138 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E1B055A12ED6E76A00B2E5DC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E1B055A02ED6E76A00B2E5DC /* SUMEE!.app */,
+				E1B055AD2ED6E76D00B2E5DC /* sumeeTests.xctest */,
+				E1B055B72ED6E76D00B2E5DC /* sumeeUITests.xctest */,
+				E126EB642EF7F19700BE9C90 /* ShareToSumee.appex */,
+				E1E790752F35A7D500B5D352 /* SumeeWidgetsExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E1D29F202EEBF1EB0021E012 /* PSXKit */ = {
+			isa = PBXGroup;
+			children = (
+				E152E60A2F046F9E00D2050D /* Skins */,
+				E1E34D742EF962F000EAA7E0 /* PSXControlManager.swift */,
+				E1D2A2742EEC3E290021E012 /* pcsx_rearmed.framework */,
+				E1D29F2A2EEBFD2E0021E012 /* PSXScreenLayout.swift */,
+				E1D29F1A2EEBF1EB0021E012 /* PSXAudio.swift */,
+				E146ECCF2EFA37E20082F891 /* PSXVirtualController.swift */,
+				E1D29F1B2EEBF1EB0021E012 /* PSXCore.swift */,
+				E1D29F1C2EEBF1EB0021E012 /* PSXInput.swift */,
+				E1D29F1D2EEBF1EB0021E012 /* PSXRenderView.swift */,
+				E1D29F1E2EEBF1EB0021E012 /* PSXShaders.metal */,
+				E1D29F1F2EEBF1EB0021E012 /* PSXVirtualController.swift */,
+			);
+			path = PSXKit;
+			sourceTree = "<group>";
+		};
+		E1D2AC812EED93DC0021E012 /* SNESKit */ = {
+			isa = PBXGroup;
+			children = (
+				E152E5F42F03DFBE00D2050D /* Skins */,
+				E1E34D782EF9653100EAA7E0 /* SNESControlManager.swift */,
+				E1D2AD5A2EEDAB2F0021E012 /* Snes9x.framework */,
+				E1D2AD582EEDA15B0021E012 /* SNESScreenLayout.swift */,
+				E146ECCD2EFA37CC0082F891 /* SNESVirtualController.swift */,
+				E1D2AD562EED9F3C0021E012 /* SNESVirtualController.swift */,
+				E1D2AC7C2EED93DC0021E012 /* SNESAudio.swift */,
+				E1D2AC7D2EED93DC0021E012 /* SNESCore.swift */,
+				E1D2AC7E2EED93DC0021E012 /* SNESInput.swift */,
+				E1D2AC7F2EED93DC0021E012 /* SNESRenderView.swift */,
+				E1D2AC802EED93DC0021E012 /* SNESShaders.metal */,
+			);
+			path = SNESKit;
+			sourceTree = "<group>";
+		};
+		E1E9299E2EE99502001E2138 /* DSKit */ = {
+			isa = PBXGroup;
+			children = (
+				E152E22E2F02798800D2050D /* skins */,
+				E1E34ACA2EF957AD00EAA7E0 /* DSControlManager.swift */,
+				E1E92A742EEAA1E8001E2138 /* DSFirmwareConfigView.swift */,
+				E1E92A722EEA94A1001E2138 /* DSFirmwarePatcher.swift */,
+				E1E92A702EEA9489001E2138 /* melonds.framework */,
+				E1E92A6A2EEA3035001E2138 /* DSScreensLayout.swift */,
+				E1E92A682EEA2E17001E2138 /* DSVirtualController.swift */,
+				E146ECD12EFA37EC0082F891 /* DSVirtualController.swift */,
+				E1E929A72EE9B209001E2138 /* DSBiosImporterView.swift */,
+				E1E929A82EE9B209001E2138 /* DSBiosManager.swift */,
+				E1E929982EE99502001E2138 /* DS-Bridging-Header.h */,
+				E1E929992EE99502001E2138 /* DSAudio.swift */,
+				E1E9299A2EE99502001E2138 /* DSCore.swift */,
+				E1E9299B2EE99502001E2138 /* DSInput.swift */,
+				E1E9299C2EE99502001E2138 /* DSRenderView.swift */,
+				E1E9299D2EE99502001E2138 /* DSShaders.metal */,
+			);
+			path = DSKit;
+			sourceTree = "<group>";
+		};
+		E1E92A6C2EEA4247001E2138 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E1E92A6D2EEA4248001E2138 /* melonds.framework */,
+				E1E790762F35A7D500B5D352 /* WidgetKit.framework */,
+				E1E790782F35A7D500B5D352 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E126EB632EF7F19700BE9C90 /* ShareToSumee */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E126EB6F2EF7F19700BE9C90 /* Build configuration list for PBXNativeTarget "ShareToSumee" */;
+			buildPhases = (
+				E126EB602EF7F19700BE9C90 /* Sources */,
+				E126EB612EF7F19700BE9C90 /* Frameworks */,
+				E126EB622EF7F19700BE9C90 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				E126EB652EF7F19700BE9C90 /* ShareToSumee */,
+			);
+			name = ShareToSumee;
+			packageProductDependencies = (
+			);
+			productName = ShareToSumee;
+			productReference = E126EB642EF7F19700BE9C90 /* ShareToSumee.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		E1B0559F2ED6E76A00B2E5DC /* SUMEE! */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1B055C12ED6E76D00B2E5DC /* Build configuration list for PBXNativeTarget "SUMEE!" */;
+			buildPhases = (
+				E1B0559C2ED6E76A00B2E5DC /* Sources */,
+				E1B0559D2ED6E76A00B2E5DC /* Frameworks */,
+				E1B0559E2ED6E76A00B2E5DC /* Resources */,
+				E102C7F62EE8F77200DDA23A /* Embed Libraries */,
+				E102C96F2EE924BC00DDA23A /* Run Script */,
+				E126EB732EF7F19700BE9C90 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E126EB6D2EF7F19700BE9C90 /* PBXTargetDependency */,
+				E1E7908C2F35AE6600B5D352 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				E10CA5092EFB75F1005E6E9F /* NESKit */,
+				E10CADB02EFBE217005E6E9F /* PicoDriveKit */,
+				E152E22E2F02798800D2050D /* skins */,
+				E152E5B62F02995300D2050D /* Skins */,
+				E152E5F42F03DFBE00D2050D /* Skins */,
+				E152E60A2F046F9E00D2050D /* Skins */,
+				E1B055A22ED6E76A00B2E5DC /* sumee */,
+			);
+			name = "SUMEE!";
+			packageProductDependencies = (
+			);
+			productName = sumee;
+			productReference = E1B055A02ED6E76A00B2E5DC /* SUMEE!.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E1B055AC2ED6E76D00B2E5DC /* sumeeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1B055C42ED6E76D00B2E5DC /* Build configuration list for PBXNativeTarget "sumeeTests" */;
+			buildPhases = (
+				E1B055A92ED6E76D00B2E5DC /* Sources */,
+				E1B055AA2ED6E76D00B2E5DC /* Frameworks */,
+				E1B055AB2ED6E76D00B2E5DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E1B055AF2ED6E76D00B2E5DC /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				E1B055B02ED6E76D00B2E5DC /* sumeeTests */,
+			);
+			name = sumeeTests;
+			packageProductDependencies = (
+			);
+			productName = sumeeTests;
+			productReference = E1B055AD2ED6E76D00B2E5DC /* sumeeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E1B055B62ED6E76D00B2E5DC /* sumeeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1B055C72ED6E76D00B2E5DC /* Build configuration list for PBXNativeTarget "sumeeUITests" */;
+			buildPhases = (
+				E1B055B32ED6E76D00B2E5DC /* Sources */,
+				E1B055B42ED6E76D00B2E5DC /* Frameworks */,
+				E1B055B52ED6E76D00B2E5DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E1B055B92ED6E76D00B2E5DC /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				E1B055BA2ED6E76D00B2E5DC /* sumeeUITests */,
+			);
+			name = sumeeUITests;
+			packageProductDependencies = (
+			);
+			productName = sumeeUITests;
+			productReference = E1B055B72ED6E76D00B2E5DC /* sumeeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		E1E790742F35A7D500B5D352 /* SumeeWidgetsExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1E790852F35A7D700B5D352 /* Build configuration list for PBXNativeTarget "SumeeWidgetsExtension" */;
+			buildPhases = (
+				E1E790712F35A7D500B5D352 /* Sources */,
+				E1E790722F35A7D500B5D352 /* Frameworks */,
+				E1E790732F35A7D500B5D352 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				E1E7907A2F35A7D500B5D352 /* SumeeWidgets */,
+			);
+			name = SumeeWidgetsExtension;
+			packageProductDependencies = (
+			);
+			productName = SumeeWidgetsExtension;
+			productReference = E1E790752F35A7D500B5D352 /* SumeeWidgetsExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E1B055982ED6E76A00B2E5DC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2620;
+				LastUpgradeCheck = 2610;
+				TargetAttributes = {
+					E126EB632EF7F19700BE9C90 = {
+						CreatedOnToolsVersion = 26.1;
+					};
+					E1B0559F2ED6E76A00B2E5DC = {
+						CreatedOnToolsVersion = 26.1;
+					};
+					E1B055AC2ED6E76D00B2E5DC = {
+						CreatedOnToolsVersion = 26.1;
+						TestTargetID = E1B0559F2ED6E76A00B2E5DC;
+					};
+					E1B055B62ED6E76D00B2E5DC = {
+						CreatedOnToolsVersion = 26.1;
+						TestTargetID = E1B0559F2ED6E76A00B2E5DC;
+					};
+					E1E790742F35A7D500B5D352 = {
+						CreatedOnToolsVersion = 26.2;
+					};
+				};
+			};
+			buildConfigurationList = E1B0559B2ED6E76A00B2E5DC /* Build configuration list for PBXProject "SUMEE!" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E1B055972ED6E76A00B2E5DC;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = E1B055A12ED6E76A00B2E5DC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E1B0559F2ED6E76A00B2E5DC /* SUMEE! */,
+				E1B055AC2ED6E76D00B2E5DC /* sumeeTests */,
+				E1B055B62ED6E76D00B2E5DC /* sumeeUITests */,
+				E126EB632EF7F19700BE9C90 /* ShareToSumee */,
+				E1E790742F35A7D500B5D352 /* SumeeWidgetsExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E126EB622EF7F19700BE9C90 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1B0559E2ED6E76A00B2E5DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1B055AB2ED6E76D00B2E5DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1B055B52ED6E76D00B2E5DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1E790732F35A7D500B5D352 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E102C96F2EE924BC00DDA23A /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E126EB602EF7F19700BE9C90 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1B0559C2ED6E76A00B2E5DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E102C7ED2EE8ED0D00DDA23A /* GBAAudio.swift in Sources */,
+				E102C7EE2EE8ED0D00DDA23A /* GBAVirtualController.swift in Sources */,
+				E102C7EF2EE8ED0D00DDA23A /* GBAShaders.metal in Sources */,
+				E1E929AA2EE9B209001E2138 /* DSBiosManager.swift in Sources */,
+				E1E929AC2EE9B209001E2138 /* DSBiosImporterView.swift in Sources */,
+				E1D29F2B2EEBFD2E0021E012 /* PSXScreenLayout.swift in Sources */,
+				E1E92A6B2EEA3035001E2138 /* DSScreensLayout.swift in Sources */,
+				E1D2AD572EED9F3C0021E012 /* SNESVirtualController.swift in Sources */,
+				E1E92A692EEA2E17001E2138 /* DSVirtualController.swift in Sources */,
+				E1D29F222EEBF1EC0021E012 /* PSXVirtualController.swift in Sources */,
+				E146ECD42EFA37FB0082F891 /* GBAVirtualController.swift in Sources */,
+				E1D2AD592EEDA15B0021E012 /* SNESScreenLayout.swift in Sources */,
+				E1D29F232EEBF1EC0021E012 /* PSXShaders.metal in Sources */,
+				E1E34D792EF9653100EAA7E0 /* SNESControlManager.swift in Sources */,
+				E1D29F242EEBF1EC0021E012 /* PSXCore.swift in Sources */,
+				E1D29F252EEBF1EC0021E012 /* PSXAudio.swift in Sources */,
+				E1E34ACB2EF957AD00EAA7E0 /* DSControlManager.swift in Sources */,
+				E1D29F262EEBF1EC0021E012 /* PSXInput.swift in Sources */,
+				E1E34D752EF962F000EAA7E0 /* PSXControlManager.swift in Sources */,
+				E1E34D772EF962FB00EAA7E0 /* GBAControlManager.swift in Sources */,
+				E1D29F272EEBF1EC0021E012 /* PSXRenderView.swift in Sources */,
+				E146ECD02EFA37E20082F891 /* PSXVirtualController.swift in Sources */,
+				E146ECD22EFA37EC0082F891 /* DSVirtualController.swift in Sources */,
+				E1E92A752EEAA1E8001E2138 /* DSFirmwareConfigView.swift in Sources */,
+				E1E92A732EEA94A1001E2138 /* DSFirmwarePatcher.swift in Sources */,
+				E102C7F02EE8ED0D00DDA23A /* GBACore.swift in Sources */,
+				E102C7F12EE8ED0D00DDA23A /* GBAInput.swift in Sources */,
+				E1D2AC822EED93DC0021E012 /* SNESRenderView.swift in Sources */,
+				E1D2AC832EED93DC0021E012 /* SNESInput.swift in Sources */,
+				E1D2AC842EED93DC0021E012 /* SNESCore.swift in Sources */,
+				E1D2AC852EED93DC0021E012 /* SNESAudio.swift in Sources */,
+				E146ECCE2EFA37CC0082F891 /* SNESVirtualController.swift in Sources */,
+				E1E34A622EF9304300EAA7E0 /* GBAScreenLayout.swift in Sources */,
+				E1D2AC862EED93DC0021E012 /* SNESShaders.metal in Sources */,
+				E1E9299F2EE99502001E2138 /* DSRenderView.swift in Sources */,
+				E1E929A02EE99502001E2138 /* DSCore.swift in Sources */,
+				E1E929A12EE99502001E2138 /* DSAudio.swift in Sources */,
+				E1E929A22EE99502001E2138 /* DSInput.swift in Sources */,
+				E1E929A32EE99502001E2138 /* DSShaders.metal in Sources */,
+				E102C7F22EE8ED0D00DDA23A /* GBARenderView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1B055A92ED6E76D00B2E5DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1B055B32ED6E76D00B2E5DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1E790712F35A7D500B5D352 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E126EB6D2EF7F19700BE9C90 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E126EB632EF7F19700BE9C90 /* ShareToSumee */;
+			targetProxy = E126EB6C2EF7F19700BE9C90 /* PBXContainerItemProxy */;
+		};
+		E1B055AF2ED6E76D00B2E5DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E1B0559F2ED6E76A00B2E5DC /* SUMEE! */;
+			targetProxy = E1B055AE2ED6E76D00B2E5DC /* PBXContainerItemProxy */;
+		};
+		E1B055B92ED6E76D00B2E5DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E1B0559F2ED6E76A00B2E5DC /* SUMEE! */;
+			targetProxy = E1B055B82ED6E76D00B2E5DC /* PBXContainerItemProxy */;
+		};
+		E1E7908C2F35AE6600B5D352 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E1E790742F35A7D500B5D352 /* SumeeWidgetsExtension */;
+			targetProxy = E1E7908B2F35AE6600B5D352 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E126EB702EF7F19700BE9C90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ShareToSumee/ShareToSumee.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 57AUPGKTQ4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ShareToSumee/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ShareToSumee;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = GetzemaniCruz.sumee.lite.ShareToSumee;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		E126EB712EF7F19700BE9C90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ShareToSumee/ShareToSumee.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 57AUPGKTQ4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ShareToSumee/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ShareToSumee;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = GetzemaniCruz.sumee.lite.ShareToSumee;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		E1B055BF2ED6E76D00B2E5DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 57AUPGKTQ4;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E1B055C02ED6E76D00B2E5DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 57AUPGKTQ4;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E1B055C22ED6E76D00B2E5DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = sumee/sumee.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 220;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 57AUPGKTQ4;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_BITCODE = NO;
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DSKit",
+					"$(PROJECT_DIR)/PSXKit",
+					"$(PROJECT_DIR)/SNESKit",
+					"$(PROJECT_DIR)/NESKit",
+					"$(PROJECT_DIR)/PicoDriveKit",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = sumee/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "Play your music library";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/DSKit",
+					"$(PROJECT_DIR)/PSXKit",
+					"$(PROJECT_DIR)/SNESKit",
+					"$(PROJECT_DIR)/NESKit",
+					"$(PROJECT_DIR)/PicoDriveKit",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = GetzemaniCruz.sumee.lite;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		E1B055C32ED6E76D00B2E5DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = sumee/sumee.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 220;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 57AUPGKTQ4;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_BITCODE = NO;
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DSKit",
+					"$(PROJECT_DIR)/PSXKit",
+					"$(PROJECT_DIR)/SNESKit",
+					"$(PROJECT_DIR)/NESKit",
+					"$(PROJECT_DIR)/PicoDriveKit",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = sumee/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "Play your music library";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/DSKit",
+					"$(PROJECT_DIR)/PSXKit",
+					"$(PROJECT_DIR)/SNESKit",
+					"$(PROJECT_DIR)/NESKit",
+					"$(PROJECT_DIR)/PicoDriveKit",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = GetzemaniCruz.sumee.lite;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		E1B055C52ED6E76D00B2E5DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 57AUPGKTQ4;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_BITCODE = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = GetzemaniCruz.sumee.liteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sumee.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/sumee";
+			};
+			name = Debug;
+		};
+		E1B055C62ED6E76D00B2E5DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 57AUPGKTQ4;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_BITCODE = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = GetzemaniCruz.sumee.liteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sumee.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/sumee";
+			};
+			name = Release;
+		};
+		E1B055C82ED6E76D00B2E5DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 57AUPGKTQ4;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_BITCODE = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = GetzemaniCruz.sumee.liteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = sumee;
+			};
+			name = Debug;
+		};
+		E1B055C92ED6E76D00B2E5DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 57AUPGKTQ4;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_BITCODE = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = GetzemaniCruz.sumee.liteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = sumee;
+			};
+			name = Release;
+		};
+		E1E790862F35A7D700B5D352 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = SumeeWidgets.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 57AUPGKTQ4;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SumeeWidgets/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SumeeWidgets;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 26.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = GetzemaniCruz.sumee.lite.SumeeWidgets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		E1E790872F35A7D700B5D352 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = SumeeWidgets.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 57AUPGKTQ4;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SumeeWidgets/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SumeeWidgets;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 26.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = GetzemaniCruz.sumee.lite.SumeeWidgets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E126EB6F2EF7F19700BE9C90 /* Build configuration list for PBXNativeTarget "ShareToSumee" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E126EB702EF7F19700BE9C90 /* Debug */,
+				E126EB712EF7F19700BE9C90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1B0559B2ED6E76A00B2E5DC /* Build configuration list for PBXProject "SUMEE!" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1B055BF2ED6E76D00B2E5DC /* Debug */,
+				E1B055C02ED6E76D00B2E5DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1B055C12ED6E76D00B2E5DC /* Build configuration list for PBXNativeTarget "SUMEE!" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1B055C22ED6E76D00B2E5DC /* Debug */,
+				E1B055C32ED6E76D00B2E5DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1B055C42ED6E76D00B2E5DC /* Build configuration list for PBXNativeTarget "sumeeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1B055C52ED6E76D00B2E5DC /* Debug */,
+				E1B055C62ED6E76D00B2E5DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1B055C72ED6E76D00B2E5DC /* Build configuration list for PBXNativeTarget "sumeeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1B055C82ED6E76D00B2E5DC /* Debug */,
+				E1B055C92ED6E76D00B2E5DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1E790852F35A7D700B5D352 /* Build configuration list for PBXNativeTarget "SumeeWidgetsExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1E790862F35A7D700B5D352 /* Debug */,
+				E1E790872F35A7D700B5D352 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E1B055982ED6E76A00B2E5DC /* Project object */;
+}
