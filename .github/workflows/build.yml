@@ -30,7 +30,6 @@ jobs:
             -target "SUMEE!" \
             -configuration Release \
             -destination generic/platform=iOS \
-            -derivedDataPath DerivedData \
             CODE_SIGNING_ALLOWED=NO \
             ONLY_ACTIVE_ARCH=NO \
             build
@@ -38,7 +37,9 @@ jobs:
       - name: Create IPA manually
         run: |
           mkdir -p Payload
-          cp -R DerivedData/Build/Products/Release-iphoneos/SUMEE!.app Payload/
+          cp -R ~/Library/Developer/Xcode/DerivedData/*/Build/Products/Release-iphoneos/SUMEE!.app Payload/ || \
+          cp -R ~/Library/Developer/Xcode/DerivedData/SUMEE\!-*/Build/Products/Release-iphoneos/SUMEE!.app Payload/ || \
+          echo "App not found in expected location"
           zip -r SUMEE-Lite.ipa Payload/
           ls -la *.ipa
 
