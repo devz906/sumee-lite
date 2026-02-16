@@ -60,23 +60,21 @@ jobs:
           else
             echo "Creating minimal iOS app binary"
             # Create a simple working binary using swiftc like imgtool
-            cat > /tmp/App.swift << 'EOF'
-import UIKit
-import Foundation
-
-class AppDelegate: UIResponder, UIApplicationDelegate {
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        return true
-    }
-}
-
-@main
-struct App {
-    static func main() {
-        UIApplicationMain(CommandLine.argc, CommandLine.unsafeArgv, nil, NSStringFromClass(AppDelegate.self))
-    }
-}
-EOF
+            echo 'import UIKit' > /tmp/App.swift
+            echo 'import Foundation' >> /tmp/App.swift
+            echo '' >> /tmp/App.swift
+            echo 'class AppDelegate: UIResponder, UIApplicationDelegate {' >> /tmp/App.swift
+            echo '    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {' >> /tmp/App.swift
+            echo '        return true' >> /tmp/App.swift
+            echo '    }' >> /tmp/App.swift
+            echo '}' >> /tmp/App.swift
+            echo '' >> /tmp/App.swift
+            echo '@main' >> /tmp/App.swift
+            echo 'struct App {' >> /tmp/App.swift
+            echo '    static func main() {' >> /tmp/App.swift
+            echo '        UIApplicationMain(CommandLine.argc, CommandLine.unsafeArgv, nil, NSStringFromClass(AppDelegate.self))' >> /tmp/App.swift
+            echo '    }' >> /tmp/App.swift
+            echo '}' >> /tmp/App.swift
             swiftc -o Payload/SUMEE!.app/SUMEE \
               -sdk $(xcrun --sdk iphoneos --show-sdk-path) \
               -target arm64-apple-ios15.0 \
