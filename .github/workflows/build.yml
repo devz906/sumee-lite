@@ -27,7 +27,7 @@ jobs:
       - name: Build for Any iOS Device (arm64)
         run: |
           xcodebuild -project SUMEE!.xcodeproj \
-            -scheme SUMEE \
+            -scheme "SUMEE!" \
             -configuration Release \
             -destination generic/platform=iOS \
             -archivePath SUMEE.xcarchive \
